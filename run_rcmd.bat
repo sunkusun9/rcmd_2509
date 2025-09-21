@@ -1,1 +1,1 @@
-docker run --gpus all --rm -p 8888:8888 -v D:\work/lecture/rcmd_2509:/work --network rcmd -it multi_rcmd:latest  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser --notebook-dir=/work
+docker run --gpus all --rm -p 8888:8888 -v C:\rcmd:/work --network rcmd -it multi_rcmd:latest  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser --notebook-dir=/work
