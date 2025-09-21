@@ -103,7 +103,7 @@ docker load -i multi_rcmd.tar
 run_rcmd.bat는 실습 환경을 구동시키는 docker 명령이 들어 있습니다. 명령은 아래 와 같습니다. 
 
 ```
-docker run --gpus all --rm -p 8888:8888 -v D:\work/lecture/rcmd_2506:/work --network rcmd -it multi_rcmd:latest  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser --notebook-dir=/work
+docker run --gpus all --rm -p 8888:8888 -v C:\rcmd:/work --network rcmd -it multi_rcmd:latest  jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --no-browser --notebook-dir=/work
 ```
 
 이 경로를 실습 환경 내의 작업 경로를 로컬 PC에 해당 디렉터리로 바꾸어 줍니다.
