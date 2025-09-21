@@ -59,39 +59,6 @@ https://www.nvidia.com/ko-kr/drivers/details/241094/
 wsl --install --distribution Ubuntu
 ```
 
-.wslconfig 파일을 /user/student 폴더에 만듭니다.
-```
-# Settings apply across all Linux distros running on WSL 2
-[wsl2]
-
-# Limits VM memory to use no more than 24 GB, this can be set as whole numbers using GB or MB
-memory=24GB 
-
-# Sets the VM to use 6 virtual processors
-processors=6
-
-# Sets amount of swap storage space to 24GB, default is 25% of available RAM
-swap=24GB
-```
-
-WSL 구동
-
-```cmd
-wsl -d Ubuntu
-```
-user account: rcmd/rcmd2025
-
-```bash
-sudo apt update
-sudo apt full-upgrade -y
-```
-
-CPU와 메모리 현황을 봅니다.
-```
-lscpu
-free -h
-```
-
 
 ## 실습환경 구축
 
