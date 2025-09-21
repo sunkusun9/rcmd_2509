@@ -1,0 +1,22 @@
+services:
+  oracle:
+    image: oracle-rcmd:latest
+    container_name: oracle-db
+    restart: unless-stopped
+    environment:
+      ORACLE_PASSWORD: rcmd_multi
+    ports:
+      - "1521:1521"    
+      - "8080:8080"
+
+  qdrant:
+    image: qdrant_rcmd:latest
+    container_name: qdrant
+    ports:
+      - "6333:6333"    # REST API
+      - "6334:6334"    # gRPC (옵션)
+    restart: unless-stopped
+
+networks:
+  default:
+    name: rcmd
