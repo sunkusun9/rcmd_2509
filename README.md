@@ -108,7 +108,7 @@ docker run --gpus all --rm -p 8888:8888 -v C:\rcmd:/work --network rcmd -it mult
 
 이 경로를 실습 환경 내의 작업 경로를 로컬 PC에 해당 디렉터리로 바꾸어 줍니다.
 
-위 내용에서 D:\work/lecture/rcmd_2506 가 작업 파일의 경로입니다. 이 경로를 로컬 PC의 경로로 변경하고 저장합니다. 
+위 내용에서 C:\rcmd 가 작업 파일의 경로입니다. 이 경로를 로컬 PC의 경로로 변경하고 저장합니다. 
 
 
 ## 실습 환경 구동
